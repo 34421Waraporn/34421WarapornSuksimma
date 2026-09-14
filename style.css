@@ -6,14 +6,14 @@
 
 body {
     font-family: 'Sarabun', 'Tahoma', sans-serif;
-    background-color: #f4f6f8;
+    background-color: #FDF0F5; /* พื้นหลังสีชมพูอ่อนๆ ลายสบายตา */
     color: #2c3e50;
     line-height: 1.7;
 }
 
-/* แถบเมนูด้านบน สีแดงหมากสุก มจพ. */
+/* แถบเมนูด้านบน สีชมพู */
 .navbar {
-    background-color: #AC3520;
+    background-color: #E84393; /* สีชมพูหลัก */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body {
     padding: 12px 20px;
     position: sticky;
     top: 0;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(232, 67, 147, 0.2);
     z-index: 1000;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
-    background-color: #7d2313;
+    background-color: #C2185B; /* ชมพูเข้มขึ้นเมื่อ Hover */
     box-shadow: inset 0 -2px 0 #ffffff;
 }
 
@@ -55,7 +55,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: #AC3520;
+    color: #E84393;
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 10px;
@@ -69,7 +69,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #AC3520;
+    background-color: #E84393;
     border-radius: 2px;
 }
 
@@ -79,13 +79,13 @@ body {
     border-radius: 12px;
     padding: 35px 40px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    border-top: 5px solid #AC3520;
+    box-shadow: 0 4px 20px rgba(232, 67, 147, 0.08);
+    border-top: 5px solid #E84393;
 }
 
 .content-card h3 {
     font-size: 20px;
-    color: #AC3520;
+    color: #E84393;
     margin-bottom: 12px;
 }
 
@@ -124,7 +124,7 @@ ul li {
 
 ul li::before {
     content: "•";
-    color: #AC3520;
+    color: #E84393;
     font-size: 24px;
     position: absolute;
     left: 0;
@@ -134,9 +134,9 @@ ul li::before {
 /* ช่องทางการติดต่อ */
 .contact-box h2 {
     font-size: 22px;
-    color: #AC3520;
+    color: #E84393;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f8e1eb;
     padding-bottom: 10px;
 }
 
@@ -146,7 +146,7 @@ ul li::before {
 }
 
 .contact-box a {
-    color: #0066cc;
+    color: #d63384;
     text-decoration: none;
     font-weight: 500;
 }
@@ -172,11 +172,12 @@ ul li::before {
 /* จัดกึ่งกลางสำหรับกรอบเป้าหมายการศึกษา */
 .target-card-center {
     text-align: center !important;
+    background-color: #fff9fb; /* เพิ่มไฮไลต์ชมพูพาสเทลอ่อนมากๆ */
 }
 
 .target-card-center h3 {
     font-size: 24px;
-    color: #AC3520;
+    color: #E84393;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center !important;
@@ -191,7 +192,7 @@ ul li::before {
     display: block !important;
     margin: 0 auto 20px auto !important;
     box-shadow: none !important;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.12));
+    filter: drop-shadow(0 4px 8px rgba(232, 67, 147, 0.15));
 }
 
 /* กลุ่มข้อความเป้าหมาย จัดตรงกลาง และต่อกันกระชับ */
@@ -211,7 +212,7 @@ ul li::before {
 .target-text-group .department-name {
     font-size: 20px;
     font-weight: 600;
-    color: #AC3520;
+    color: #E84393;
 }
 
 .target-text-group .university-name {
@@ -219,7 +220,7 @@ ul li::before {
     color: #555555;
 }
 
-/* แสดง คณะ และ สาขา เป็นสีแดง มจพ. เดียวกัน อยู่บรรทัดเดียวกัน */
+/* แสดง คณะ และ สาขา เป็นสีชมพู เดียวกัน อยู่บรรทัดเดียวกัน */
 .target-text-single-line {
     text-align: center !important;
     text-indent: 0 !important;
@@ -231,7 +232,7 @@ ul li::before {
 .target-text-single-line .department-name {
     font-size: 20px;
     font-weight: 600;
-    color: #AC3520 !important;
+    color: #E84393 !important;
     display: inline;
     margin-right: 8px;
 }
@@ -256,10 +257,10 @@ ul li::before {
     align-items: center;
 }
 
-/* ข้างหน้า: ระดับชั้น (สีแดงแบรนด์ + ตัวหนา) */
+/* ข้างหน้า: ระดับชั้น (สีชมพู + ตัวหนา) */
 .edu-card .edu-level {
     font-weight: 700;
-    color: #AC3520 !important;
+    color: #E84393 !important;
     margin-right: 8px;
     white-space: nowrap;
 }
@@ -358,7 +359,7 @@ ul li::before {
 }
 
 /* ==========================================
-   ส่วน "จัดทำโดย" ในหน้าคำนำ (หน้าเข้ม - หลังอ่อน)
+   ส่วน "จัดทำโดย" สีชมพูสดใส (ชิดขวา)
    ========================================== */
 
 .foreword-author {
@@ -374,17 +375,160 @@ ul li::before {
     display: block !important;
 }
 
-/* หน้าเข้ม: จัดทำโดย (ตัวหนาสีเทาเข้ม) */
+/* คำว่า "จัดทำโดย" : สีชมพู + ตัวหนา */
 .foreword-author .author-label {
     font-weight: 700;
-    color: #222222 !important;
+    color: #E84393 !important;
     margin-right: 6px;
 }
 
-/* หลังอ่อน: ชื่อ-นามสกุล (สีแดงสว่างขึ้น) */
+/* ชื่อ-นามสกุล : สีชมพูเดียวกัน + ตัวปกติ */
 .foreword-author .author-name {
-    font-weight: 500;
-    color: #C0392B !important;
+    font-weight: 400;
+    color: #E84393 !important;
+}
+
+/* ==========================================
+   จัดแต่งการ์ดและรูปภาพในหน้าทักษะ (skills.html)
+   ========================================== */
+
+.skill-card {
+    text-align: center !important;
+    padding: 30px 25px !important;
+    margin-bottom: 25px;
+}
+
+.skill-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E84393 !important; /* สีชมพูหลัก */
+    margin-bottom: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+/* จุดสัญลักษณ์สีชมพูหน้าหัวข้อทักษะ */
+.skill-title::before {
+    content: "•";
+    color: #E84393;
+    font-size: 26px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.skill-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.skill-img:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   รวมทักษะในการ์ดเดียว + หัวข้อชิดซ้าย
+   ========================================== */
+
+.skills-single-card {
+    padding: 40px !important;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+
+.skill-item {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skill-item .skill-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E84393 !important;
+    text-align: left !important;
+    margin-bottom: 16px;
+    display: block;
+    position: relative;
+    padding-left: 22px;
+}
+
+.skill-item .skill-title::before {
+    content: "•";
+    color: #E84393;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+/* รูปภาพทักษะแบบ Grid 4 รูป */
+.skill-img-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill-img-grid-4 .skill-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item .skill-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-item .skill-img-wrapper .skill-img {
+    width: 100%;
+    max-width: 550px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================
+   ส่วนจัดระเบียบรูปภาพหน้าคำนำ
+   ========================================== */
+
+.foreword-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.foreword-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(232, 67, 147, 0.15); /* เพิ่มเงาสีชมพูระเรื่อ */
 }
 
 /* ==========================================
@@ -399,6 +543,14 @@ ul li::before {
     .target-text-single-line .faculty-name,
     .target-text-single-line .department-name {
         font-size: 16px;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .skill-item .skill-img {
+        height: auto;
+        max-height: 220px;
     }
 }
 
@@ -435,13 +587,13 @@ ul li::before {
     .interest-single-p {
         text-indent: 1.8em !important;
     }
-    .activity-card {
+    .activity-card, .skill-card, .skills-single-card {
         padding: 20px 15px !important;
     }
-    .activity-img {
+    .activity-img, .skill-img {
         max-width: 100%;
     }
-    .activity-desc {
+    .activity-desc, .skill-title {
         font-size: 15px;
     }
     .foreword-author {
@@ -449,434 +601,6 @@ ul li::before {
     }
     .foreword-author p {
         font-size: 15px !important;
-    }
-}
-/* ==========================================
-   ส่วน "จัดทำโดย" สีเดียวกันทั้งชุด (ชิดขวา)
-   ========================================== */
-
-.foreword-author {
-    margin-top: 35px;
-    text-align: right !important;
-}
-
-.foreword-author p {
-    font-size: 17px !important;
-    line-height: 1.6 !important;
-    text-indent: 0 !important;
-    margin: 0 !important;
-    display: block !important;
-}
-
-/* คำว่า "จัดทำโดย" : สีแดง มจพ. + ตัวหนา */
-.foreword-author .author-label {
-    font-weight: 700;
-    color: #AC3520 !important;
-    margin-right: 6px;
-}
-
-/* ชื่อ-นามสกุล : สีแดง มจพ. เดียวกัน + ตัวปกติ */
-.foreword-author .author-name {
-    font-weight: 400;
-    color: #AC3520 !important;
-}
-
-@media (max-width: 600px) {
-    .foreword-author {
-        margin-top: 25px;
-    }
-    .foreword-author p {
-        font-size: 15px !important;
-    }
-}
-/* ==========================================
-   จัดแต่งการ์ดและรูปภาพในหน้าทักษะ (skills.html)
-   ========================================== */
-
-.skill-card {
-    text-align: center !important;
-    padding: 30px 25px !important;
-    margin-bottom: 25px;
-}
-
-.skill-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #AC3520 !important; /* สีแดงแบรนด์ มจพ. */
-    margin-bottom: 18px;
-    position: relative;
-    display: inline-block;
-}
-
-/* จุดสัญลักษณ์สีแดงหน้าหัวข้อทักษะ */
-.skill-title::before {
-    content: "•";
-    color: #AC3520;
-    font-size: 26px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.skill-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-img {
-    max-width: 450px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: transform 0.2s ease;
-}
-
-.skill-img:hover {
-    transform: scale(1.02);
-}
-
-@media (max-width: 600px) {
-    .skill-card {
-        padding: 20px 15px !important;
-    }
-    .skill-title {
-        font-size: 18px;
-    }
-    .skill-img {
-        max-width: 100%;
-    }
-}
-/* ==========================================
-   รวมทักษะในการ์ดเดียว + หัวข้อชิดซ้าย
-   ========================================== */
-
-/* การ์ดหลัก */
-.skills-single-card {
-    padding: 35px 40px !important;
-}
-
-/* แต่ละรายการทักษะ */
-.skill-item {
-    margin-bottom: 35px;
-}
-
-.skill-item:last-child {
-    margin-bottom: 0; /* รายการสุดท้ายไม่ต้องเว้นระยะล่าง */
-}
-
-/* หัวข้อชิดซ้าย */
-.skill-item .skill-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #AC3520 !important;
-    text-align: left !important;
-    margin-bottom: 15px;
-    display: block;
-    position: relative;
-    padding-left: 22px;
-}
-
-/* จุดสัญลักษณ์สีแดงชิดซ้าย */
-.skill-item .skill-title::before {
-    content: "•";
-    color: #AC3520;
-    font-size: 26px;
-    position: absolute;
-    left: 0;
-    top: -3px;
-}
-
-/* จัดวางรูปภาพให้อยู่ตรงกลางของการ์ด */
-.skill-item .skill-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-item .skill-img {
-    max-width: 420px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 600px) {
-    .skills-single-card {
-        padding: 20px 20px !important;
-    }
-    .skill-item .skill-title {
-        font-size: 17px;
-    }
-    .skill-item {
-        margin-bottom: 25px;
-    }
-}
-/* ==========================================
-   จัดหน้าทักษะแบบ Grid 2 คอลัมน์ และคุมรูปภาพไม่ให้ล้น
-   ========================================== */
-
-/* คุมการ์ดหลักและป้องกันรูปภาพทะลุขอบ */
-.skills-single-card {
-    padding: 35px 30px !important;
-    overflow: hidden !important;
-}
-
-/* จัดเลย์เอาต์เป็น 2 คอลัมน์ */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px 25px;
-}
-
-.skill-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* หัวข้อชิดซ้าย */
-.skill-item .skill-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #AC3520 !important;
-    text-align: left !important;
-    margin-bottom: 12px;
-    display: block;
-    position: relative;
-    padding-left: 20px;
-}
-
-/* จุดสัญลักษณ์สีแดงชิดซ้าย */
-.skill-item .skill-title::before {
-    content: "•";
-    color: #AC3520;
-    font-size: 24px;
-    position: absolute;
-    left: 0;
-    top: -3px;
-}
-
-/* พื้นที่จัดวางรูปภาพ */
-.skill-item .skill-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-grow: 1;
-}
-
-/* กรณีทักษะที่มีหลายรูปภาพให้จัดเรียงเป็น Grid ย่อย 2x2 */
-.skill-item .skill-img-wrapper.multi-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-}
-
-/* คุมขนาดรูปภาพเดี่ยว */
-.skill-item .skill-img {
-    width: 100%;
-    max-width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* คุมขนาดรูปภาพกรณีมีหลายรูป */
-.skill-item .skill-img-wrapper.multi-images .skill-img {
-    height: 100px;
-}
-
-/* Responsive ปรับเป็น 1 คอลัมน์บนหน้าจอมือถือ */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    .skill-item .skill-img {
-        height: auto;
-        max-height: 220px;
-    }
-    .skill-item .skill-img-wrapper.multi-images .skill-img {
-        height: 120px;
-    }
-}
-/* ==========================================
-   จัดรูปภาพทักษะที่ 1 ให้เรียงแถวเดียว (4 รูป)
-   ========================================== */
-
-/* คุมการ์ดหลักและกักขอบ */
-.skills-single-card {
-    padding: 35px 30px !important;
-    overflow: hidden !important;
-}
-
-/* เลย์เอาต์การ์ดใหญ่ 2 คอลัมน์ */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px 25px;
-}
-
-.skill-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* หัวข้อและจุดสีแดง */
-.skill-item .skill-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #AC3520 !important;
-    text-align: left !important;
-    margin-bottom: 12px;
-    display: block;
-    position: relative;
-    padding-left: 20px;
-}
-
-.skill-item .skill-title::before {
-    content: "•";
-    color: #AC3520;
-    font-size: 24px;
-    position: absolute;
-    left: 0;
-    top: -3px;
-}
-
-/* พื้นที่ใส่รูปภาพทั่วไป */
-.skill-item .skill-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-grow: 1;
-}
-
-/* จัดรูปภาพ 4 รูปเรียงแถวเดียว */
-.skill-item .skill-img-wrapper.single-row-images {
-    display: flex;
-    flex-direction: row;
-    gap: 6px; /* ระยะห่างระหว่างรูป */
-    width: 100%;
-}
-
-/* ขนาดรูปเดี่ยวทั่วไป */
-.skill-item .skill-img {
-    width: 100%;
-    max-width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* ปรับขนาดรูปเมื่อเรียงแถวเดียว 4 รูป */
-.skill-item .skill-img-wrapper.single-row-images .skill-img {
-    width: 25%; /* แบ่ง 4 รูปเท่าๆ กัน */
-    height: 90px; /* ความสูงของแต่ละรูป */
-    border-radius: 6px;
-}
-
-/* Responsive หน้าจอมือถือ */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    .skill-item .skill-img {
-        height: auto;
-        max-height: 220px;
-    }
-    .skill-item .skill-img-wrapper.single-row-images .skill-img {
-        height: 70px;
-    }
-}
-/* ==========================================
-   จัดหน้าทักษะแบบเรียงลงมาทีละแถว (Vertical List)
-   ========================================== */
-
-/* การ์ดหลักคลุมทั้งหมด */
-.skills-single-card {
-    padding: 40px !important;
-    max-width: 800px; /* จำกัดความกว้างการ์ดให้ดูพอดี ไม่กว้างเกินไป */
-    margin: 0 auto;
-    overflow: hidden !important;
-}
-
-/* แต่ละรายการทักษะ เรียงต่อกันลงมา */
-.skill-item {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.skill-item:last-child {
-    margin-bottom: 0;
-}
-
-/* หัวข้อทักษะชิดซ้าย พร้อมจุดสีแดง */
-.skill-item .skill-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #AC3520 !important;
-    text-align: left !important;
-    margin-bottom: 16px;
-    display: block;
-    position: relative;
-    padding-left: 22px;
-}
-
-.skill-item .skill-title::before {
-    content: "•";
-    color: #AC3520;
-    font-size: 26px;
-    position: absolute;
-    left: 0;
-    top: -4px;
-}
-
-/* --- จัดการรูปภาพแบบ 4 รูป (บน 2 ล่าง 2) --- */
-.skill-img-grid-4 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
-    gap: 12px;
-    width: 100%;
-    max-width: 600px; /* คุมไม่ให้กว้างเกินไป */
-    margin: 0 auto; /* จัดให้อยู่กลาง */
-}
-
-.skill-img-grid-4 .skill-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* --- จัดการรูปภาพเดี่ยว --- */
-.skill-item .skill-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.skill-item .skill-img-wrapper .skill-img {
-    width: 100%;
-    max-width: 550px; /* ขนาดรูปภาพเดี่ยวพอดีสายตา */
-    height: 320px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-}
-
-/* Responsive สำหรับหน้าจอมือถือ */
-@media (max-width: 600px) {
-    .skills-single-card {
-        padding: 25px 20px !important;
     }
     .skill-img-grid-4 {
         gap: 8px;
@@ -887,25 +611,4 @@ ul li::before {
     .skill-item .skill-img-wrapper .skill-img {
         height: 220px;
     }
-}
-/* ==========================================
-   ส่วนจัดระเบียบรูปภาพหน้าคำนำ
-   ========================================== */
-
-.foreword-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px; /* ระยะห่างจากชื่อผู้จัดทำด้านบน */
-    width: 100%;
-}
-
-.foreword-img {
-    width: 100%;
-    max-width: 400px; /* ปรับขนาดความกว้างสูงสุดตามต้องการ */
-    height: auto;
-    max-height: 280px;
-    object-fit: cover;
-    border-radius: 12px; /* ทำมุมโค้งมน */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* เพิ่มเงาให้นุ่มนวล */
 }
