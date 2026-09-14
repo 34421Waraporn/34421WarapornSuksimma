@@ -6,14 +6,14 @@
 
 body {
     font-family: 'Sarabun', 'Tahoma', sans-serif;
-    background-color: #FFF5F8; /* พื้นหลังสีชมพูขาวนวลพาสเทลอ่อนมากๆ */
-    color: #4A4A4A;
+    background-color: #fff5f7; /* สีพื้นหลังชมพูอ่อนมากๆ */
+    color: #4a3e3e;
     line-height: 1.7;
 }
 
-/* แถบเมนูด้านบน สีชมพูพาสเทลนุ่มนวล */
+/* แถบเมนูด้านบน สีชมพูอ่อน */
 .navbar {
-    background-color: #F06292; /* สีชมพูพาสเทลหลัก */
+    background-color: #e8a5b8; /* สีชมพูอ่อนหลัก */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body {
     padding: 12px 20px;
     position: sticky;
     top: 0;
-    box-shadow: 0 3px 12px rgba(240, 98, 146, 0.15);
+    box-shadow: 0 3px 10px rgba(232, 165, 184, 0.2);
     z-index: 1000;
 }
 
@@ -31,15 +31,15 @@ body {
     padding: 8px 16px;
     font-size: 15px;
     font-weight: 600;
-    border-radius: 20px; /* เพิ่มความโค้งมนน่ารัก */
+    border-radius: 6px;
     margin: 3px 5px;
     transition: all 0.25s ease;
     white-space: nowrap;
 }
 
 .navbar a:hover, .navbar a.active {
-    background-color: #E91E63; /* ชมพูเข้มขึ้นเล็กน้อยเมื่อ Hover */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d68d9f;
+    box-shadow: inset 0 -2px 0 #ffffff;
 }
 
 /* พื้นที่แสดงเนื้อหาหลัก */
@@ -50,60 +50,12 @@ body {
     padding: 0 10px;
 }
 
-/* ==========================================
-   สไตล์สำหรับหน้าปก (Cover Page / Header Banner)
-   ========================================== */
-
-.cover-card {
-    background: linear-gradient(135deg, #FFE4E9 0%, #FFFFFF 100%); /* ไล่เฉดสีชมพูพาสเทลนุ่มๆ */
-    border-radius: 20px;
-    padding: 50px 30px;
-    text-align: center;
-    margin-bottom: 35px;
-    box-shadow: 0 8px 25px rgba(240, 98, 146, 0.12);
-    border: 2px solid #FFD1DC;
-    position: relative;
-    overflow: hidden;
-}
-
-.cover-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #D81B60;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.cover-subtitle {
-    font-size: 20px;
-    color: #F06292;
-    font-weight: 500;
-    margin-bottom: 25px;
-}
-
-.cover-profile-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%; /* รูปวงกลมสไตล์น่ารัก */
-    border: 5px solid #ffffff;
-    box-shadow: 0 6px 18px rgba(240, 98, 146, 0.2);
-    margin: 0 auto 20px auto;
-    display: block;
-}
-
-.cover-author-info {
-    font-size: 18px;
-    color: #4A4A4A;
-    font-weight: 500;
-}
-
 /* หัวข้อประจำหน้า */
 .heading {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
-    color: #D81B60;
+    color: #e8a5b8; /* สีชมพูอ่อน */
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 10px;
@@ -115,28 +67,25 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
+    width: 80px;
     height: 4px;
-    background-color: #F06292;
-    border-radius: 10px;
+    background-color: #e8a5b8;
+    border-radius: 2px;
 }
 
 /* กล่องการ์ดเนื้อหา */
 .profile-card, .content-card, .contact-box {
     background: #ffffff;
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 35px 40px;
     margin-bottom: 30px;
-    box-shadow: 0 6px 20px rgba(240, 98, 146, 0.06);
-    border-top: 5px solid #F06292;
-    border-left: 1px solid #FFE4E9;
-    border-right: 1px solid #FFE4E9;
-    border-bottom: 1px solid #FFE4E9;
+    box-shadow: 0 4px 20px rgba(232, 165, 184, 0.15);
+    border-top: 5px solid #e8a5b8; /* เส้นขอบบนสีชมพูอ่อน */
 }
 
 .content-card h3 {
     font-size: 20px;
-    color: #D81B60;
+    color: #e8a5b8; /* หัวข้อย่อยสีชมพูอ่อน */
     margin-bottom: 12px;
 }
 
@@ -146,16 +95,16 @@ body {
     max-width: 360px;
     height: auto;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 10px;
     display: block;
     margin: 0 auto 20px auto;
-    box-shadow: 0 5px 15px rgba(240, 98, 146, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .img-caption {
     text-align: center;
     font-size: 14px;
-    color: #777777;
+    color: #887777;
     margin-bottom: 20px;
     font-style: italic;
 }
@@ -175,7 +124,7 @@ ul li {
 
 ul li::before {
     content: "•";
-    color: #F06292;
+    color: #e8a5b8; /* สัญลักษณ์จุดสีชมพูอ่อน */
     font-size: 24px;
     position: absolute;
     left: 0;
@@ -185,9 +134,9 @@ ul li::before {
 /* ช่องทางการติดต่อ */
 .contact-box h2 {
     font-size: 22px;
-    color: #D81B60;
+    color: #e8a5b8; /* หัวข้อสีชมพูอ่อน */
     margin-bottom: 20px;
-    border-bottom: 1px solid #FFE4E9;
+    border-bottom: 1px solid #fce8ed;
     padding-bottom: 10px;
 }
 
@@ -197,7 +146,7 @@ ul li::before {
 }
 
 .contact-box a {
-    color: #EC407A;
+    color: #d68d9f;
     text-decoration: none;
     font-weight: 500;
 }
@@ -212,7 +161,7 @@ ul li::before {
 
 .interest-paragraph {
     font-size: 18px;
-    color: #4A4A4A;
+    color: #4a3e3e;
     text-align: center;
     text-indent: 0;
     line-height: 1.8;
@@ -221,12 +170,11 @@ ul li::before {
 
 .target-card-center {
     text-align: center !important;
-    background-color: #FFF0F4 !important; /* พื้นหลังสีชมพูอ่อนนุ่มละมุน */
 }
 
 .target-card-center h3 {
     font-size: 24px;
-    color: #D81B60;
+    color: #e8a5b8; /* หัวข้อสีชมพูอ่อน */
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center !important;
@@ -240,7 +188,7 @@ ul li::before {
     display: block !important;
     margin: 0 auto 20px auto !important;
     box-shadow: none !important;
-    filter: drop-shadow(0 4px 8px rgba(240, 98, 146, 0.15));
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.08));
 }
 
 .target-text-group {
@@ -253,18 +201,18 @@ ul li::before {
 .target-text-group .faculty-name {
     font-size: 22px;
     font-weight: bold;
-    color: #333333;
+    color: #4a3e3e;
 }
 
 .target-text-group .department-name {
     font-size: 20px;
     font-weight: 600;
-    color: #F06292;
+    color: #e8a5b8; /* สีชมพูอ่อน */
 }
 
 .target-text-group .university-name {
     font-size: 18px;
-    color: #666666;
+    color: #665555;
 }
 
 .target-text-single-line {
@@ -278,14 +226,14 @@ ul li::before {
 .target-text-single-line .department-name {
     font-size: 20px;
     font-weight: 600;
-    color: #F06292 !important;
+    color: #e8a5b8 !important; /* สีชมพูอ่อน */
     display: inline;
     margin-right: 8px;
 }
 
 .target-text-single-line .university-name {
     font-size: 18px;
-    color: #666666;
+    color: #665555;
     display: inline;
 }
 
@@ -305,14 +253,14 @@ ul li::before {
 
 .edu-card .edu-level {
     font-weight: 700;
-    color: #F06292 !important;
+    color: #e8a5b8 !important; /* ระดับชั้นสีชมพูอ่อน */
     margin-right: 8px;
     white-space: nowrap;
 }
 
 .edu-card .school-name {
     font-weight: 400;
-    color: #555555;
+    color: #554444;
 }
 
 /* ==========================================
@@ -321,7 +269,7 @@ ul li::before {
 
 .interest-indent-first {
     font-size: 17px;
-    color: #4A4A4A;
+    color: #4a3e3e;
     line-height: 1.8;
     text-indent: 2.5em !important;
     text-align: justify;
@@ -330,7 +278,7 @@ ul li::before {
 
 .interest-normal-p {
     font-size: 17px;
-    color: #4A4A4A;
+    color: #4a3e3e;
     line-height: 1.8;
     text-indent: 0 !important;
     text-align: justify;
@@ -339,17 +287,18 @@ ul li::before {
 
 .interest-single-p {
     font-size: 17px;
-    color: #4A4A4A;
+    color: #4a3e3e;
     line-height: 1.8;
     text-indent: 2.5em !important;
     text-align: justify;
     margin: 0;
 }
 
+/* สไตล์สำหรับหน้าคำนำ */
 .content-card p.foreword-p {
     display: block !important;
     font-size: 17px !important;
-    color: #4A4A4A !important;
+    color: #4a3e3e !important;
     line-height: 1.8 !important;
     text-indent: 0 !important;
     text-align: justify !important;
@@ -382,8 +331,8 @@ ul li::before {
     max-width: 450px;
     width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease;
 }
 
@@ -393,7 +342,7 @@ ul li::before {
 
 .activity-desc {
     font-size: 17px;
-    color: #4A4A4A;
+    color: #4a3e3e;
     line-height: 1.6;
     text-indent: 0 !important;
     text-align: center !important;
@@ -402,7 +351,7 @@ ul li::before {
 }
 
 /* ==========================================
-   ส่วน "จัดทำโดย" ชิดขวา
+   ส่วน "จัดทำโดย" ในหน้าคำนำ
    ========================================== */
 
 .foreword-author {
@@ -420,13 +369,13 @@ ul li::before {
 
 .foreword-author .author-label {
     font-weight: 700;
-    color: #F06292 !important;
+    color: #e8a5b8 !important; /* สีชมพูอ่อน */
     margin-right: 6px;
 }
 
 .foreword-author .author-name {
-    font-weight: 500;
-    color: #D81B60 !important;
+    font-weight: 400;
+    color: #e8a5b8 !important; /* สีชมพูอ่อน */
 }
 
 /* ==========================================
@@ -442,7 +391,7 @@ ul li::before {
 .skill-title {
     font-size: 20px;
     font-weight: bold;
-    color: #F06292 !important;
+    color: #e8a5b8 !important; /* หัวข้อทักษะสีชมพูอ่อน */
     margin-bottom: 18px;
     position: relative;
     display: inline-block;
@@ -450,22 +399,47 @@ ul li::before {
 
 .skill-title::before {
     content: "•";
-    color: #F06292;
+    color: #e8a5b8; /* จุดสัญลักษณ์สีชมพูอ่อน */
     font-size: 26px;
     margin-right: 8px;
     vertical-align: middle;
 }
 
+.skill-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.skill-img:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   รวมทักษะในการ์ดเดียว
+   ========================================== */
+
 .skills-single-card {
-    padding: 40px !important;
+    padding: 35px 40px !important;
+    overflow: hidden !important;
     max-width: 800px;
     margin: 0 auto;
-    overflow: hidden !important;
 }
 
 .skill-item {
     width: 100%;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-item:last-child {
@@ -475,7 +449,7 @@ ul li::before {
 .skill-item .skill-title {
     font-size: 20px;
     font-weight: bold;
-    color: #F06292 !important;
+    color: #e8a5b8 !important; /* หัวข้อทักษะสีชมพูอ่อน */
     text-align: left !important;
     margin-bottom: 16px;
     display: block;
@@ -485,13 +459,14 @@ ul li::before {
 
 .skill-item .skill-title::before {
     content: "•";
-    color: #F06292;
+    color: #e8a5b8; /* จุดสัญลักษณ์สีชมพูอ่อน */
     font-size: 26px;
     position: absolute;
     left: 0;
     top: -4px;
 }
 
+/* รูปภาพทักษะแบบ Grid 4 */
 .skill-img-grid-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -505,7 +480,7 @@ ul li::before {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -521,12 +496,12 @@ ul li::before {
     max-width: 550px;
     height: 320px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(240, 98, 146, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* ==========================================
-   ส่วนรูปภาพหน้าคำนำ
+   รูปภาพหน้าคำนำ
    ========================================== */
 
 .foreword-image-container {
@@ -544,32 +519,82 @@ ul li::before {
     max-height: 280px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(240, 98, 146, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Responsive สำหรับจอมือถือ */
-@media (max-width: 600px) {
-    .cover-card {
-        padding: 30px 15px;
+/* ==========================================
+   Responsive สำหรับหน้าจอมือถือ/แท็บเล็ต
+   ========================================== */
+
+@media (max-width: 768px) {
+    .university-logo-center {
+        width: 150px !important;
+        max-width: 150px !important;
     }
-    .cover-title {
-        font-size: 24px;
-    }
-    .cover-subtitle {
+    .target-text-single-line .faculty-name,
+    .target-text-single-line .department-name {
         font-size: 16px;
     }
-    .cover-profile-img {
-        width: 130px;
-        height: 130px;
-    }
+}
+
+@media (max-width: 600px) {
     .page-container {
         width: 95%;
         margin: 20px auto;
     }
-    .profile-card, .content-card, .contact-box {
-        padding: 20px 20px;
+    .profile-card, .content-card, .contact-box, .skills-single-card {
+        padding: 20px 20px !important;
     }
     .heading {
-        font-size: 22px;
+        font-size: 24px;
+    }
+    .interest-paragraph {
+        font-size: 16px;
+    }
+    .target-card-center {
+        padding: 20px 15px;
+    }
+    .target-text-group .faculty-name { font-size: 19px; }
+    .target-text-group .department-name { font-size: 17px; }
+    .target-text-group .university-name { font-size: 15px; }
+    .edu-card p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .interest-indent-first,
+    .interest-normal-p,
+    .interest-single-p {
+        font-size: 15px;
+    }
+    .interest-indent-first,
+    .interest-single-p {
+        text-indent: 1.8em !important;
+    }
+    .activity-card, .skill-card {
+        padding: 20px 15px !important;
+    }
+    .activity-img, .skill-img {
+        max-width: 100%;
+    }
+    .activity-desc {
+        font-size: 15px;
+    }
+    .foreword-author {
+        margin-top: 25px;
+    }
+    .foreword-author p {
+        font-size: 15px !important;
+    }
+    .skill-title, .skill-item .skill-title {
+        font-size: 18px;
+    }
+    .skill-img-grid-4 {
+        gap: 8px;
+    }
+    .skill-img-grid-4 .skill-img {
+        height: 120px;
+    }
+    .skill-item .skill-img-wrapper .skill-img {
+        height: 220px;
     }
 }
