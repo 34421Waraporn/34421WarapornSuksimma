@@ -12,11 +12,11 @@
         }
         body {
             font-family: 'Tahoma', 'Sarabun', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #fff5f7; /* พื้นหลังสีชมพูอ่อนละมุน */
+            color: #4a4a4a;
         }
         .navbar {
-            background-color: #AC3520;
+            background-color: #f4acb7; /* แถบเมนูสีชมพูพาสเทล */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,11 +24,11 @@
             padding: 10px;
             position: sticky;
             top: 0;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 6px rgba(244, 172, 183, 0.3);
             z-index: 100;
         }
         .navbar a {
-            color: white;
+            color: #5c3d46; /* ตัวหนังสือสีน้ำตาลชมพูกลืนตา อ่านง่าย */
             text-decoration: none;
             padding: 6px 12px;
             font-size: 14px;
@@ -36,9 +36,11 @@
             border-radius: 4px;
             margin: 3px;
             white-space: nowrap;
+            transition: background-color 0.2s ease;
         }
         .navbar a:hover, .navbar a.active {
-            background-color: #7d2313;
+            background-color: #e88d9d; /* สีชมพูเข้มขึ้นเมื่อ Hover/Active */
+            color: #ffffff;
         }
         .page-container {
             width: 90%;
@@ -50,15 +52,15 @@
         .heading {
             font-size: 26px;
             margin-bottom: 20px;
-            color: #AC3520;
+            color: #d87085; /* หัวข้อสีชมพูเข้มปานกลาง */
         }
         .profile-card, .contact-box {
             background: #ffffff;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            border-top: 4px solid #AC3520;
+            box-shadow: 0 4px 12px rgba(232, 141, 157, 0.15);
+            border-top: 4px solid #f4acb7; /* ขอบบนสีชมพูอ่อน */
             text-align: center;
         }
         /* ล็อกขนาดรูปภาพให้พอดีหน้าจอชัวร์ 100% */
@@ -69,21 +71,21 @@
             display: block !important;
             margin: 0 auto 15px auto !important;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
         }
         .img-caption {
             font-size: 13px;
-            color: #666;
+            color: #888;
             margin-bottom: 20px;
         }
         .profile-details h2 {
             font-size: 20px;
-            color: #111;
+            color: #333;
             margin-bottom: 8px;
         }
         .profile-details h3 {
             font-size: 16px;
-            color: #444;
+            color: #666;
             font-weight: normal;
             margin-bottom: 5px;
         }
@@ -92,7 +94,7 @@
         }
         .contact-box h2 {
             font-size: 18px;
-            color: #AC3520;
+            color: #d87085;
             margin-bottom: 15px;
         }
         .contact-box p {
@@ -101,8 +103,11 @@
             word-break: break-word;
         }
         .contact-box a {
-            color: #0077cc;
+            color: #c85a70; /* ลิงก์สีชมพูอมแดง */
             text-decoration: underline;
+        }
+        .contact-box a:hover {
+            color: #a33b50;
         }
     </style>
 </head>
@@ -120,11 +125,11 @@
 
     <main class="page-container">
         <h1 class="heading">แนะนำตัว</h1>
-       
+        
         <div class="profile-card">
             <!-- บังคับขนาดภาพด้วย style ตรงๆ เพื่อแก้ปัญหารูปใหญ่ล้นจอ -->
             <img src="banner.jpg" alt="รูปโปรไฟล์" class="profile-img" style="width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px;">
-           
+            
             <div class="profile-details">
                 <h2>นางสาววราภรณ์ สุขสิมมา</h2>
                 <h3>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h3>
